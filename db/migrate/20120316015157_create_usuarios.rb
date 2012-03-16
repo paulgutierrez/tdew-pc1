@@ -1,11 +1,11 @@
 class CreateUsuarios < ActiveRecord::Migration
   def change
     create_table :usuarios do |t|
-      t.text :nombre
-      t.text :apellido_paterno
-      t.text :apellido_materno
-      t.text :email
-      t.text :fecnac
+      t.string :nombre
+      t.string :apellido_paterno
+      t.string :apellido_materno
+      t.string :email
+      t.string :fecnac
 
       t.timestamps
     end

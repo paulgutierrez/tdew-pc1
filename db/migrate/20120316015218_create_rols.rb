@@ -1,8 +1,8 @@
 class CreateRols < ActiveRecord::Migration
   def change
     create_table :rols do |t|
-      t.text :usuario_id
-      t.text :decripcion
+      t.string :usuario_id
+      t.string :decripcion
 
       t.timestamps
     end
